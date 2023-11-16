@@ -133,6 +133,7 @@
       document.forms[0].submit();*/
       let result = `Game Over\nScore:${score}\nEnemies Defeated: ${enemiesDefeated}/${enemiesSpawned}\nRatio: ${(enemiesDefeated/enemiesSpawned).toFixed(2)}`;
       alert(result);
+      window.location.reload();
       return;
     }
     if (player.pendingUpgrades <= 0) {
